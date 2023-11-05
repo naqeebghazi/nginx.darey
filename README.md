@@ -39,7 +39,7 @@ Mac:
   - To start nginx:
     ![executenginxlocally](https://github.com/naqeebghazi/nginx.darey/blob/main/images/executeNginxLocally.png)
 
-    Then go to your browser and enter: localhost:8080
+  - Then go to your browser and enter: localhost:8080
     You will see this message to confirm successful setup of nginx on your system:
     ![browsernginx](https://github.com/naqeebghazi/nginx.darey/blob/main/images/nginxlocalhost.png)
 
