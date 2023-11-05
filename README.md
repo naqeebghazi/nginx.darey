@@ -25,3 +25,12 @@ However, NGINX also comes with a few downsides. For instance, it only has one si
 Additionally, while the software is open source, you get less control over its modules. You also won’t be able to disable any of them. This means you’re more restricted when customizing an NGINX server to your specific needs.
 However, if performance is your top priority, NGINX might be the right choice for you. It is also the ideal solution for websites with large amounts of traffic. It just scales better than Apache or other competitors.
 A powerful server software such as NGINX can help minimize downtime and prevent long loading times. These characteristics mean NGINX can serve content to your users more efficiently, leading to more conversions.
+
+
+Installing nginx:
+Mac:
+  - In terminal enter:
+    $ brew install nginx
+
+    This installs nginx in the MacOS location: /usr/local/etc/nginx
+    
