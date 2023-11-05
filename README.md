@@ -35,4 +35,12 @@ Mac:
     This installs nginx in the MacOS location: /usr/local/etc/nginx
     The contents of this file locations:
     ![nginxconf](https://github.com/naqeebghazi/nginx.darey/blob/main/images/Screenshot%202023-11-05%20at%2023.26.02.png?raw=true)
+
+  - To start nginx:
+    ![executenginxlocally](https://github.com/naqeebghazi/nginx.darey/blob/main/images/executeNginxLocally.png)
+
+    Then go to your browser and enter: localhost:8080
+    You will see this message to confirm successful setup of nginx on your system:
+    ![browsernginx](https://github.com/naqeebghazi/nginx.darey/blob/main/images/nginxlocalhost.png)
+
     
