@@ -48,11 +48,12 @@ There are key-value pairs and contexts. Each context has curly brakcets within w
 ![nginxcontextfile](https://github.com/naqeebghazi/nginx.darey/blob/main/images/nginxcontext.png?raw=true)
 
 We customise the nginx.conf file and put the path of the items we wish to serve to the browser:
-  http {
-      server {
-          listen 8080;
-          root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
-      }
-  }
   
-  events {}
+    http {
+        server {
+            listen 8080;
+            root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
+        }
+    }
+    
+    events {}
