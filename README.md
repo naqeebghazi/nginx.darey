@@ -68,6 +68,7 @@ Then refresh your browser and the contents of your index.html file will be visib
 Mime.types saves you the need to reference every file that serves content and so the nginx.conf file wil be edited to be as follows:
 
 From being this:
+    
     http {
     
         types {
