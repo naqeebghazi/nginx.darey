@@ -79,7 +79,7 @@ From being this:
     
         server {
             listen 8080;
-            root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
+            root /Users/User1/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
         }
     }
     
@@ -94,7 +94,7 @@ To this which used mime.types:
     
         server {
             listen 8080;
-            root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
+            root /Users/User1/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
         }
     }
     
