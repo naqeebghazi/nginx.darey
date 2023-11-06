@@ -43,5 +43,6 @@ Mac:
     You will see this message to confirm successful setup of nginx on your system:
     ![browsernginx](https://github.com/naqeebghazi/nginx.darey/blob/main/images/nginxlocalhost.png)
 
-Understanding the nginx.conf file in the etc/nginx directory:
+Understanding the nginx.conf file in the etc/nginx directory.
+There are key-value pairs and contexts. Each context has curly brakcets within which are key-value pairs that determine the function of the context. 
 ![nginxcontextfile](https://github.com/naqeebghazi/nginx.darey/blob/main/images/nginxcontext.png?raw=true)
