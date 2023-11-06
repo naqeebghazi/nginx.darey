@@ -1,4 +1,4 @@
-# NGINX  
+# NGINX Notes
 
 [The Nginx website](https://www.nginx.com/)
 
@@ -103,3 +103,5 @@ To this which used mime.types:
 
 Both of these configurations output the same content to the browser:
 ![cssinbrowser](https://github.com/naqeebghazi/nginx.darey/blob/main/images/cssinbrowser.png?raw=true)
+
+## Location Block
