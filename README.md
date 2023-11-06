@@ -43,4 +43,5 @@ Mac:
     You will see this message to confirm successful setup of nginx on your system:
     ![browsernginx](https://github.com/naqeebghazi/nginx.darey/blob/main/images/nginxlocalhost.png)
 
-    
+Understanding the nginx.conf file in the etc/nginx directory:
+
