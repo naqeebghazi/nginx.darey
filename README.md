@@ -47,12 +47,12 @@ Understanding the nginx.conf file in the etc/nginx directory.
 There are key-value pairs and contexts. Each context has curly brakcets within which are key-value pairs that determine the function of the context. 
 ![nginxcontextfile](https://github.com/naqeebghazi/nginx.darey/blob/main/images/nginxcontext.png?raw=true)
 
-We customise the nginx.conf file and put the path of the items we wish to serve to the browser:
+We customise the nginx.conf file and put the path of the items we wish to serve to the browser (only the directory path is required, not the index file itself:
   
     http {
         server {
             listen 8080;
-            root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
+            root /Users/User1/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
         }
     }
     
