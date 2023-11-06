@@ -52,7 +52,7 @@ We customise the nginx.conf file and put the path of the items we wish to serve 
     http {
         server {
             listen 8080;
-            root /Users/User1/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
+            root /Users/User1/nginx.darey/mysite;
         }
     }
     
