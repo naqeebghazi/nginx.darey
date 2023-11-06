@@ -57,3 +57,46 @@ We customise the nginx.conf file and put the path of the items we wish to serve 
     }
     
     events {}
+
+AFter the nginx.conf file is configured, nginx must be reloaded in the terminal:
+
+    nginx -s reload
+
+Then refresh your browser and the contents of your index.html file will be visible. 
+
+## MIME types
+Mime.types saves you the need to reference every file that serves content and so the nginx.conf file wil be edited to be as follows:
+
+From being this:
+    http {
+    
+        types {
+            text/css    css;
+            text/html   html;
+    
+        }
+    
+        server {
+            listen 8080;
+            root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
+        }
+    }
+    
+    events {}
+    
+
+To this which used mime.types:
+
+    http {
+    
+    include mime.types;
+    
+        server {
+            listen 8080;
+            root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
+        }
+    }
+    
+    events {}
+  
+
