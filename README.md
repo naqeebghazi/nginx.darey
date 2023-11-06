@@ -112,4 +112,33 @@ Both of these configurations output the same content to the browser:
 
 ## Location Block
 
+The location block specifies more content for the site. It specifies the locations of the files to serve on a given webpage. 
+Location+root requires its own directory.
+Location+alias does not require a directory and can be pointed toward the root directory. Example:
+
+    http {
+    
+        types {
+            text/css    css;
+            text/html   html;
+    
+        }
+    
+        server {
+            listen 8080;
+            root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;    #filepath points to files to serve when port 80 is accessed
+            
+            location /animals {
+                root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;
+            }
+    
+            location /carbs {
+                alias /Users/nghazi/DevOps/darey.io/nginx.darey/mysite/animals;
+            }
+            
+        }
+    }
+    
+    events {}
+
 
