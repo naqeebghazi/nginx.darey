@@ -44,4 +44,4 @@ Mac:
     ![browsernginx](https://github.com/naqeebghazi/nginx.darey/blob/main/images/nginxlocalhost.png)
 
 Understanding the nginx.conf file in the etc/nginx directory:
-
+![nginxcontextfile](https://github.com/naqeebghazi/nginx.darey/blob/main/images/nginxcontext.png?raw=true)
