@@ -58,11 +58,17 @@ We customise the nginx.conf file and put the path of the items we wish to serve 
     
     events {}
 
-AFter the nginx.conf file is configured, nginx must be reloaded in the terminal:
+After the nginx.conf file is configured, nginx must be reloaded in the terminal:
 
     nginx -s reload
 
 Then refresh your browser and the contents of your index.html file will be visible. 
+
+All the content of your webpage will be stored in the mysite directory. In this example, the two files are stless.css and the original index.html:
+
+![html](https://github.com/naqeebghazi/nginx.darey/blob/main/images/htmlshot.png?raw=true)
+
+![css](https://github.com/naqeebghazi/nginx.darey/blob/main/images/stylescss.png?raw=true)
 
 ## MIME types
 Mime.types saves you the need to reference every file that serves content and so the nginx.conf file wil be edited to be as follows:
@@ -105,3 +111,5 @@ Both of these configurations output the same content to the browser:
 ![cssinbrowser](https://github.com/naqeebghazi/nginx.darey/blob/main/images/cssinbrowser.png?raw=true)
 
 ## Location Block
+
+
