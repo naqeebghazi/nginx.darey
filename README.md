@@ -101,3 +101,5 @@ To this which used mime.types:
     events {}
   
 
+Both of these configurations output the same content to the browser:
+![cssinbrowser](https://github.com/naqeebghazi/nginx.darey/blob/main/images/cssinbrowser.png?raw=true)
