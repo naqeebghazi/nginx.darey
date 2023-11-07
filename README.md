@@ -141,4 +141,7 @@ Location+alias does not require a directory and can be pointed toward the root d
     
     events {}
 
+## Try Files
+
+By default, nginx looks for the index.html file in the root folder, but if that that isnt found for whatever reason, it'll look at alternative locations. this is where try files helps. 
 
