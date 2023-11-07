@@ -146,7 +146,7 @@ Location+alias does not require a directory and can be pointed toward the root d
 
 ## Try Files
 
-By default, nginx looks for the index.html file in the root folder, but if that that isnt found for whatever reason, it'll look at alternative locations; this is where try_files helps. The try_files 
+By default, nginx looks for the index.html file in the root folder, but if that that isnt found for whatever reason, it'll look at alternative locations; this is where try_files helps. The try_files location below lists two locations in order of priority (veggies.html, index.html), each seperated by a space. The '=404;' means if none of these locations exist, display a 404 error. 
 
     http {
     
@@ -176,5 +176,4 @@ By default, nginx looks for the index.html file in the root folder, but if that 
     }
     
     events {}
-
 
