@@ -44,7 +44,10 @@ Mac:
     ![browsernginx](https://github.com/naqeebghazi/nginx.darey/blob/main/images/nginxlocalhost.png)
 
 Understanding the nginx.conf file in the etc/nginx directory.
-There are key-value pairs and contexts. Each context has curly brakcets within which are key-value pairs that determine the function of the context. 
+ - key-value pairs
+ - contexts
+Each context has curly brakcets within which are key-value pairs that determine the function of the context. 
+
 ![nginxcontextfile](https://github.com/naqeebghazi/nginx.darey/blob/main/images/nginxcontext.png?raw=true)
 
 We customise the nginx.conf file and put the path of the items we wish to serve to the browser (only the directory path is required, not the index file itself:
@@ -143,5 +146,35 @@ Location+alias does not require a directory and can be pointed toward the root d
 
 ## Try Files
 
-By default, nginx looks for the index.html file in the root folder, but if that that isnt found for whatever reason, it'll look at alternative locations. this is where try files helps. 
+By default, nginx looks for the index.html file in the root folder, but if that that isnt found for whatever reason, it'll look at alternative locations; this is where try_files helps. The try_files 
+
+    http {
+    
+        types {
+            text/css    css;
+            text/html   html;
+    
+        }
+    
+        server {
+            listen 8080;
+            root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
+            
+            location /animals {
+                root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;
+            }
+    
+            location /carbs {
+                alias /Users/nghazi/DevOps/darey.io/nginx.darey/mysite/animals;
+            }
+    
+            location /vegetables {
+                root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;
+                try_files /vegetables/veggies.html /index.html =404;
+            }
+        }
+    }
+    
+    events {}
+
 
