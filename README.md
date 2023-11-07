@@ -55,7 +55,7 @@ We customise the nginx.conf file and put the path of the items we wish to serve 
     http {
         server {
             listen 8080;
-            root /Users/User1/nginx.darey/mysite;
+            root /Users/user1/darey.io;
         }
     }
     
@@ -88,7 +88,7 @@ From being this:
     
         server {
             listen 8080;
-            root /Users/User1/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
+            root /Users/user1/darey.io;    #filepath that contains the files that we want to serve when this port is accessed
         }
     }
     
@@ -103,7 +103,7 @@ To this which used mime.types:
     
         server {
             listen 8080;
-            root /Users/User1/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
+            root /Users/user1/darey.io;    #filepath that contains the files that we want to serve when this port is accessed
         }
     }
     
@@ -129,14 +129,14 @@ Location+alias does not require a directory and can be pointed toward the root d
     
         server {
             listen 8080;
-            root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;    #filepath points to files to serve when port 80 is accessed
+            root /Users/user1/darey.io/nginx.darey/mysite;    #filepath points to files to serve when port 80 is accessed
             
             location /animals {
-                root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;
+                root /Users/user1/darey.io;
             }
     
             location /carbs {
-                alias /Users/nghazi/DevOps/darey.io/nginx.darey/mysite/animals;
+                alias /Users/user1/darey.io/animals;
             }
             
         }
@@ -158,18 +158,18 @@ By default, nginx looks for the index.html file in the root folder, but if that 
     
         server {
             listen 8080;
-            root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
+            root /Users/user1/darey.io/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
             
             location /animals {
-                root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;
+                root /Users/user1/darey.io/nginx.darey/mysite;
             }
     
             location /carbs {
-                alias /Users/nghazi/DevOps/darey.io/nginx.darey/mysite/animals;
+                alias /Users/user1/darey.io/animals;
             }
     
             location /vegetables {
-                root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;
+                root /Users/user1/darey.io/nginx.darey/mysite;
                 try_files /vegetables/veggies.html /index.html =404;
             }
         }
