@@ -223,5 +223,7 @@ Add a new location block with the following code if we want a new name (e.g. /cr
               location /creatures {
                           return 307 /animals;
                       }
+Save and reload nginx. 
 
+Now, if I type localhost:8080/creatures into my browser, it redirects to localhost:8080/animals. 
 
