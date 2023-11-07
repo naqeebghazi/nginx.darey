@@ -177,3 +177,39 @@ By default, nginx looks for the index.html file in the root folder, but if that 
     
     events {}
 
+
+## Using a regular expression
+
+    http {
+    
+        types {
+            text/css    css;
+            text/html   html;
+    
+        }
+    
+        server {
+            listen 8080;
+            root /Users/user1/darey.io/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
+
+            location ~* /count/[0-8] {
+                **root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;**
+                try_files /index.html =404;
+            }
+            
+            location /animals {
+                root /Users/user1/darey.io/nginx.darey/mysite;
+            }
+    
+            location /carbs {
+                alias /Users/user1/darey.io/animals;
+            }
+    
+            location /vegetables {
+                root /Users/user1/darey.io/nginx.darey/mysite;
+                try_files /vegetables/veggies.html /index.html =404;
+            }
+        }
+    }
+    
+    events {}
