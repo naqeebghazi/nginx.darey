@@ -180,6 +180,8 @@ By default, nginx looks for the index.html file in the root folder, but if that 
 
 ## Using a regular expression
 
+Regular expressions (line 197) can be used to 
+
     http {
     
         types {
@@ -193,7 +195,7 @@ By default, nginx looks for the index.html file in the root folder, but if that 
             root /Users/user1/darey.io/nginx.darey/mysite;    #filepath that contains the files that we want to serve when this port is accessed
 
             location ~* /count/[0-8] {
-                **root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;**
+                root /Users/nghazi/DevOps/darey.io/nginx.darey/mysite;
                 try_files /index.html =404;
             }
             
@@ -213,3 +215,13 @@ By default, nginx looks for the index.html file in the root folder, but if that 
     }
     
     events {}
+
+## Redirects
+
+Add a new location block with the following code if we want a new name (e.g. /creatures) to redirect to a current name (e.g. /animals) or vice versa:
+
+              location /creatures {
+                          return 307 /animals;
+                      }
+
+
