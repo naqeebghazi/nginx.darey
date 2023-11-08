@@ -238,7 +238,7 @@ So now, for example, of you type localhost:8080/food it will redirect you to loc
 ## Load-balancing
 
 For nginx to run as a load balancer, you need multiple servers on the backend. 
-The node where the ngnix server is installed must have npn first installed:
+The node where the ngnix server is installed must have npm (a node application) first installed:
 
     $ brew install npm
 
@@ -248,4 +248,14 @@ Move into the a new server directory and then initalise npm:
     $ npm init -y
 
 This will initialise npn and create a package.json file in the new server directory.
+Now run the following to initialise this directory as a server:
+
+    $ npm install express
+
+Enter the following into the index.js file in the server directory:
+
+![node.js simple node code](https://github.com/naqeebghazi/nginx.darey/blob/main/images/Screenshot%202023-11-08%20at%2017.30.54.png?raw=true)
+
+
+
 
