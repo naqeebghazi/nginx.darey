@@ -262,6 +262,5 @@ To then start the node application, can do one of two ways:
 - editing package.json
   - Under the "scripts" section, type: "start": "npm run start"
   - Then typing $npm run start into the terminal.
- 
-
+ ![npmRunStart](https://github.com/naqeebghazi/nginx.darey/blob/main/images/npmrunstart.png?raw=true)
 
