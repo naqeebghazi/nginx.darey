@@ -270,11 +270,12 @@ This can then be viewed in a web browser:
 Ensure the port number stated in the index.js file is typed into the browser address bar.
 
 Create a docker file in the same directory:
-![dockerfile]()
+![dockerfile](https://github.com/naqeebghazi/nginx.darey/blob/main/images/dockerfile.png?raw=true)
 
 This creates the docker image which can then be used to create docker containers.
 Use -p to port map. In the example below, port 7777 stated in the index.js is mapped to ports 1111 and 2222 on my local computer:
-![dockerbuild_run]()
+![dockerbuild_run](https://github.com/naqeebghazi/nginx.darey/blob/main/images/dockerbuild_run.png?raw=true)
 
-Docker Desktop must be installed for docker to run:
-
+Docker Desktop must be installed for docker to run. The following shows the containers:
+![dockerdesktop](https://github.com/naqeebghazi/nginx.darey/blob/main/images/dockerdesktop.png?raw=true)
+Conatiners can be reached at localhost:1111 and localhost:2222
