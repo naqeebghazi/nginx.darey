@@ -278,4 +278,5 @@ Use -p to port map. In the example below, port 7777 stated in the index.js is ma
 
 Docker Desktop must be installed for docker to run. The following shows the containers:
 ![dockerdesktop](https://github.com/naqeebghazi/nginx.darey/blob/main/images/dockerdesktop.png?raw=true)
-Conatiners can be reached at localhost:1111 and localhost:2222
+Containers can be reached at localhost:1111 and localhost:2222
+Add conatiners for 3333 and 4444. You will now have 4 containers. 
