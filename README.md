@@ -235,5 +235,17 @@ When you want to direct a URL toward a root index file (line 13, 14 below):
 
 So now, for example, of you type localhost:8080/food it will redirect you to localhost:8080/vegetables
 
+## Load-balancing
 
+For nginx to run as a load balancer, you need multiple servers on the backend. 
+The node where the ngnix server is installed must have npn first installed:
+
+    $ brew install npm
+
+Move into the a new server directory and then initalise npm:
+
+    $ mkdir server
+    $ npm init -y
+
+This will initialise npn and create a package.json file in the new server directory.
 
