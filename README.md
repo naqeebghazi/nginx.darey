@@ -254,13 +254,13 @@ Now run the following to initialise this directory as a server:
 
 Enter the following into the index.js file in the server directory:
 
-![node.js simple node code](https://github.com/naqeebghazi/nginx.darey/blob/main/images/Screenshot%202023-11-08%20at%2017.30.54.png?raw=true)
+![node.js simple node code](https://github.com/naqeebghazi/nginx.darey/blob/main/images/indexjs.png?raw=true)
 
 To then start the node application, can do one of two ways:
 - manually via terminal
   -   $ node index.js
 - editing package.json
-  - Under the "scripts" section, type: "start": "npm run start"
+  - Under the "scripts" section, type: "start": "npm index"
   - Then typing $npm run start into the terminal.
- ![npmRunStart](https://github.com/naqeebghazi/nginx.darey/blob/main/images/npmrunstart.png?raw=true)
+ ![npmRunStart](https://github.com/naqeebghazi/nginx.darey/blob/main/images/packagejson.png?raw=true)
 
