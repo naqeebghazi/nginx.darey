@@ -216,7 +216,7 @@ Regular expressions (line 197) can be used to
     
     events {}
 
-## Redirects
+## Redirect
 
 Add a new location block with the following code if we want a new name (e.g. /creatures) to redirect to a current name (e.g. /animals) or vice versa:
 
@@ -226,4 +226,14 @@ Add a new location block with the following code if we want a new name (e.g. /cr
 Save and reload nginx. 
 
 Now, if I type localhost:8080/creatures into my browser, it redirects to localhost:8080/animals. 
+
+## Rewrite
+
+When you want to direct a URL toward a root index file (line 13, 14 below):
+
+![rewrite](https://github.com/naqeebghazi/nginx.darey/blob/main/images/rewrites.png?raw=true)
+
+So now, for example, of you type localhost:8080/food it will redirect you to localhost:8080/vegetables
+
+
 
