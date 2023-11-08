@@ -12,4 +12,3 @@ app.get("/", (req, res) => {
 app.listen(7777, () => {
     console.log("Listening on the port 7777");
 });
-
