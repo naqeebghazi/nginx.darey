@@ -267,4 +267,14 @@ To then start the node application, can do one of two ways:
 This can then be viewed in a web browser:
 ![browser7777](https://github.com/naqeebghazi/nginx.darey/blob/main/images/browser7777.png?raw=true)
 
-Esnure the port number stated in the index.js file is typed into the browser address bar.
+Ensure the port number stated in the index.js file is typed into the browser address bar.
+
+Create a docker file in the same directory:
+![dockerfile]()
+
+This creates the docker image which can then be used to create docker containers.
+Use -p to port map. In the example below, port 7777 stated in the index.js is mapped to ports 1111 and 2222 on my local computer:
+![dockerbuild_run]()
+
+Docker Desktop must be installed for docker to run:
+
