@@ -280,3 +280,19 @@ Docker Desktop must be installed for docker to run. The following shows the cont
 ![dockerdesktop](https://github.com/naqeebghazi/nginx.darey/blob/main/images/dockerdesktop.png?raw=true)
 Containers can be reached at localhost:1111 and localhost:2222
 Add conatiners for 3333 and 4444. You will now have 4 containers. 
+
+To add a load balancer feature, go to the nginx.conf file and enter the blocks of:
+
+    upstream backenserver {
+        server 127.0.0.1:1111;
+        server 127.0.0.1:1111;
+        server 127.0.0.1:1111;
+        server 127.0.0.1:1111;
+    }
+
+        location / {
+            proxy_pass http://backendserver/; #this is the load-balancing configuration.
+        }
+
+Like this:
+![loadbalancer](https://github.com/naqeebghazi/nginx.darey/blob/main/images/loadbalancer_proxypass.png?raw=true)
