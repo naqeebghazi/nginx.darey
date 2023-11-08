@@ -264,3 +264,7 @@ To then start the node application, can do one of two ways:
   - Then typing $npm run start into the terminal.
  ![npmRunStart](https://github.com/naqeebghazi/nginx.darey/blob/main/images/packagejson.png?raw=true)
 
+This can then be viewed in a web browser:
+![browser7777](https://github.com/naqeebghazi/nginx.darey/blob/main/images/browser7777.png?raw=true)
+
+Esnure the port number stated in the index.js file is typed into the browser address bar.
