@@ -296,3 +296,6 @@ To add a load balancer feature, go to the nginx.conf file and enter the blocks o
 
 Like this:
 ![loadbalancer](https://github.com/naqeebghazi/nginx.darey/blob/main/images/loadbalancer_proxypass.png?raw=true)
+
+More detailed project on load balancing using Nginx here:
+https://github.com/naqeebghazi/loadbalancerNginx
